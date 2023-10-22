@@ -58,6 +58,7 @@ footer{
 .order{
     background-color: orangered;
     color: #fff;
+    float: right;
 }
 
 .dp1{
@@ -120,7 +121,6 @@ footer{
 .picture{
     background-size: cover;
     border: 5px solid blueviolet;
-    display: flex;
 }
 
 
