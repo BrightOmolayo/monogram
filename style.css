@@ -1,0 +1,247 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+img{
+    width: 100%;
+}
+
+.main-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(32, 145px);
+}
+header{
+    border: 5px solid brown;
+    grid-area: 1/1/6/-1;
+    background-image: url(./images/monogram1.jpg);
+    background-size: cover;
+}
+
+.headertext{
+    background-color: black;
+    opacity: 0.5;
+    position: relative;
+    text-align: center;
+    height: 100%;
+}
+.htext{
+    position: absolute;
+    top: 40%;
+    left:30%;
+    background-color: transparent;
+    color:#fff;
+}
+
+nav{
+    background-color: blue;
+}
+main{
+    border: 5px solid blue;
+    grid-area: 6/1/30/-1;
+}
+footer{
+    border: 5px solid blueviolet;
+    grid-area: 30/1/-1/14;
+    display: flex;
+}
+
+.container1{
+    display: grid;
+    grid-template-columns: repeat( 6, 1fr);
+    grid-template-rows: repeat(15, 50px);
+    gap: 20px  50px;
+    border: 4px solid red;
+    padding: 20px;
+}
+
+.order{
+    background-color: orangered;
+    color: #fff;
+}
+
+.dp1{
+    background-image: url(./images/monogram2a.jpg);
+    grid-area: 1/1/7/4;
+    transition-duration: 2s;
+    background-size: cover;
+}
+.dp1:hover{
+    background-image: url(./images/monogram2b.jpg);
+}
+.dp1text{
+    grid-area: 7/1/8/4;
+}
+
+
+.dp2{
+    background-image: url(./images/monogram3a.jpg);
+    grid-area: 1/4/7/-1;
+    transition-duration: 2s;
+    background-size: cover;
+}
+.dp2:hover{
+    background-image: url(./images/monogram3b.jpg);
+}
+.dp2text{
+    grid-area: 7/4/8/-1;
+}
+
+
+
+.dp3{
+    background-image: url(./images/monogram4a.jpg);
+    grid-area: 8/1/14/4;
+    transition-duration: 2s;
+    background-size: cover;
+}
+.dp3:hover{
+    background-image: url(./images/monogram4b.jpg);
+}
+.dp3text{
+    grid-area: 14/1/15/4;
+}
+
+
+.dp4{
+    background-image: url(./images/monogram5a.jpg);
+    grid-area: 8/4/14/-1;
+    transition-duration: 2s;
+    background-size: cover;
+}
+.dp4:hover{
+    background-image: url(./images/monogram5b.jpg);
+}
+.dp4text{
+    grid-area: 14/4/15/-1;
+}
+
+
+.picture{
+    background-size: cover;
+    border: 5px solid blueviolet;
+    display: flex;
+}
+
+
+.container2{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(16, 91px);
+    gap: 10px 60px;
+    padding: 30px;
+    border: 4px solid green;
+}
+
+.images{
+    border: 8px solid darkgoldenrod;
+}
+
+.sdp1{
+    grid-area: 1/1/4/2;
+    background-image: url(./images/case1.jpg);
+    background-size: cover;
+    transition-duration: 2s;
+    transition-timing-function: ease-in-out;
+}
+.sdp1:hover{
+    background-image: url(./images/case2.jpg);
+}
+
+
+
+.sdp2{
+    grid-area: 1/2/4/3;
+    background-image: url(./images/monogram6a.jpg);
+    background-size: cover;
+    transition-duration: 2s;
+    transition-timing-function: ease-in-out;
+}
+.sdp2:hover{
+    background-image: url(./images/monogram6b.jpg);
+}
+
+
+.sdp3{
+    grid-area: 1/3/4/-1;
+    background-image: url(./images/monogram7a.jpg);
+    background-size: cover;
+    transition-duration: 2s;
+    transition-timing-function: ease-in-out;
+}
+.sdp3:hover{
+    background-image: url(./images/monogram7b.jpg);
+}
+
+
+
+.sdp4{
+    grid-area: 5/1/8/2;
+    background-image: url(./images/monogram8a.jpg);
+    background-size: cover;
+    transition-duration: 2s;
+    transition-timing-function: ease-in-out;
+}
+.sdp4:hover{
+    background-image: url(./images/monogram8b.jpg);
+}
+
+
+
+.sdp5{
+    grid-area: 5/2/8/3;
+    background-image: url(./images/monogram9a.jpg);
+    background-size: cover;
+    transition-duration: 2s;
+    transition-timing-function: ease-in-out;
+}
+.sdp5:hover{
+    background-image: url(./images/monogram9b.jpg);
+}
+
+
+
+.sdp6{
+    grid-area: 5/3/8/-1;
+    background-image: url(./images/monogram10a.jpg);
+    background-size: cover;
+    transition-duration: 2s;
+    transition-timing-function: ease-in-out;
+}
+.sdp6:hover{
+    background-image: url(./images/monogram10b.jpg);
+}
+
+
+
+.sdp7{
+    grid-area: 9/1/12/2;
+    background-image: url(./images/monogram11.jpg);
+    background-size: cover;
+}
+
+.sdp8{
+    grid-area: 9/2/12/3;
+    background-image: url(./images/monogram12.jpg);
+    background-size: cover;
+}
+
+.sdp9{
+    grid-area: 9/3/12/-1;
+    background-image: url(./images/monogram13.jpg);
+    background-size: cover;
+}
+
+.sdp10{
+    grid-area: 13/1/16/2;
+    background-image: url(./images/monogram14a.jpg);
+    background-size: cover;
+    transition-duration: 2s;
+    transition-timing-function: ease-in-out;
+}
+.sdp10:hover{
+    background-image: url(./images/monogram14b.jpg);
+}
+.spd10text{
+    grid-area: 16/1/-1/2;
+}
