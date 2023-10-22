@@ -12,7 +12,6 @@ img{
     grid-template-rows: repeat(32, 145px);
 }
 header{
-    border: 5px solid brown;
     grid-area: 1/1/6/-1;
     background-image: url(./images/monogram1.jpg);
     background-size: cover;
@@ -37,7 +36,6 @@ nav{
     background-color: blue;
 }
 main{
-    border: 5px solid blue;
     grid-area: 6/1/30/-1;
 }
 footer{
@@ -51,7 +49,7 @@ footer{
     grid-template-columns: repeat( 6, 1fr);
     grid-template-rows: repeat(15, 50px);
     gap: 20px  50px;
-    border: 4px solid red;
+
     padding: 20px;
 }
 
@@ -120,7 +118,6 @@ footer{
 
 .picture{
     background-size: cover;
-    border: 5px solid blueviolet;
 }
 
 
@@ -129,13 +126,10 @@ footer{
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(16, 91px);
     gap: 10px 60px;
-    padding: 30px;
-    border: 4px solid green;
+    padding: 40px;
+
 }
 
-.images{
-    border: 8px solid darkgoldenrod;
-}
 
 .sdp1{
     grid-area: 1/1/4/2;
