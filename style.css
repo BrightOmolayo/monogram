@@ -18,11 +18,11 @@ header{
 }
 
 .headertext{
-    background-color: black;
     opacity: 0.5;
     position: relative;
-    text-align: center;
     height: 100%;
+    z-index: 99;
+    color: #eec1b0;
 }
 .htext{
     position: absolute;
@@ -238,4 +238,10 @@ footer{
 }
 .spd10text{
     grid-area: 16/1/-1/2;
+}
+/*footer*/
+footer{
+    background-color: #1a2456;
+    color: #eec1b0;
+    display: flex;
 }
