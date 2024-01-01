@@ -59,7 +59,8 @@ main{
     background-image: url(./images/monogram2a.jpg);
     grid-area: 1/1/7/4;
     transition-duration: 2s;
-    background-size: cover;
+    background-size:cover;
+    background-position: center;
 }
 .dp1:hover{
     background-image: url(./images/monogram2b.jpg);
@@ -73,7 +74,8 @@ main{
     background-image: url(./images/monogram3a.jpg);
     grid-area: 1/4/7/-1;
     transition-duration: 2s;
-    background-size: cover;
+    background-size:cover;
+    background-position: center;
 }
 .dp2:hover{
     background-image: url(./images/monogram3b.jpg);
@@ -88,7 +90,8 @@ main{
     background-image: url(./images/monogram4a.jpg);
     grid-area: 8/1/14/4;
     transition-duration: 2s;
-    background-size: cover;
+    background-size:cover;
+    background-position: center;
 }
 .dp3:hover{
     background-image: url(./images/monogram4b.jpg);
@@ -102,7 +105,8 @@ main{
     background-image: url(./images/monogram5a.jpg);
     grid-area: 8/4/14/-1;
     transition-duration: 2s;
-    background-size: cover;
+    background-size:cover;
+    background-position: center;
 }
 .dp4:hover{
     background-image: url(./images/monogram5b.jpg);
