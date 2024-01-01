@@ -129,9 +129,11 @@ main{
 .sdp1{
     grid-area: 1/1/4/2;
     background-image: url(./images/case1.jpg);
-    background-size: contain;
+    background-size:cover;
+    background-position: center;
     transition-duration: 2s;
     transition-timing-function: ease-in-out;
+    display: block;
 }
 .sdp1:hover{
     background-image: url(./images/case2.jpg);
@@ -142,7 +144,8 @@ main{
 .sdp2{
     grid-area: 1/2/4/3;
     background-image: url(./images/monogram6a.jpg);
-    background-size: contain;
+    background-size:cover;
+    background-position: center;
     transition-duration: 2s;
     transition-timing-function: ease-in-out;
 }
@@ -154,7 +157,8 @@ main{
 .sdp3{
     grid-area: 1/3/4/-1;
     background-image: url(./images/monogram7a.jpg);
-    background-size: contain;
+    background-size:cover;
+    background-position: center;
     transition-duration: 2s;
     transition-timing-function: ease-in-out;
 }
@@ -167,7 +171,8 @@ main{
 .sdp4{
     grid-area: 5/1/8/2;
     background-image: url(./images/monogram8a.jpg);
-    background-size: contain;
+    background-size:cover;
+    background-position: center;
     transition-duration: 2s;
     transition-timing-function: ease-in-out;
 }
@@ -180,7 +185,8 @@ main{
 .sdp5{
     grid-area: 5/2/8/3;
     background-image: url(./images/monogram9a.jpg);
-    background-size: contain;
+    background-size:cover;
+    background-position: center;
     transition-duration: 2s;
     transition-timing-function: ease-in-out;
 }
@@ -193,7 +199,8 @@ main{
 .sdp6{
     grid-area: 5/3/8/-1;
     background-image: url(./images/monogram10a.jpg);
-    background-size: contain;
+    background-size:cover;
+    background-position: center;
     transition-duration: 2s;
     transition-timing-function: ease-in-out;
 }
@@ -206,25 +213,29 @@ main{
 .sdp7{
     grid-area: 9/1/12/2;
     background-image: url(./images/monogram11.jpg);
-    background-size: contain;
+    background-size:cover;
+    background-position: center;
 }
 
 .sdp8{
     grid-area: 9/2/12/3;
     background-image: url(./images/monogram12.jpg);
-    background-size: contain;
+    background-size:cover;
+    background-position: center;
 }
 
 .sdp9{
     grid-area: 9/3/12/-1;
     background-image: url(./images/monogram13.jpg);
-    background-size: contain;
+    background-size:cover;
+    background-position: center;
 }
 
 .sdp10{
     grid-area: 13/1/16/2;
     background-image: url(./images/monogram14a.jpg);
-    background-size: contain;
+    background-size:cover;
+    background-position: center;
     transition-duration: 2s;
     transition-timing-function: ease-in-out;
 }
