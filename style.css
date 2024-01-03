@@ -9,7 +9,7 @@ img{
 .main-container{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(32, 145px);
+    grid-template-rows: repeat(31, 145px);
 }
 header{
     grid-area: 1/1/6/-1;
@@ -254,10 +254,26 @@ footer{
     background-color: #1a2456;
     color: #eec1b0;
     display: flex;
-    grid-area: 30/1/-1/14;
+    grid-area: 29/1/-1/14;
+    justify-content: space-around;
+    padding-top: 5%;
 }
 footer li{
     list-style: none;
+    margin-top: 13%;
+}
+footer a{
+    color: #eec1b0;
+    text-decoration: none;
+}
+footer h4{
+    margin-bottom: 7%;
+}
+.icon{
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+    margin: 3% 0% 3% 0%;
 }
 /*mobile device*/
 
