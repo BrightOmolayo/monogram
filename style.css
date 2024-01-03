@@ -19,18 +19,18 @@ header{
 
 .headertext{
     opacity: 0.5;
-    position: relative;
-    height: 100%;
+    padding: 10%;
     z-index: 99;
     color: #eec1b0;
-}
-.htext{
     position: absolute;
-    top: 40%;
-    left:30%;
-    background-color: transparent;
-    color:#fff;
+    left: 12%;
+    top: 140px;
+    background-color: black;
+    font-size: 20px;
+    opacity: 0.5;
+    font-weight: bold;
 }
+
 
 nav{
     background-color: blue;
@@ -45,7 +45,6 @@ main{
     grid-template-columns: repeat( 6, 1fr);
     grid-template-rows: repeat(15, 50px);
     gap: 20px  50px;
-
     padding: 20px;
 }
 
@@ -54,7 +53,13 @@ main{
     color: #fff;
     float: right;
 }
-
+.price-tag{
+    float: right;
+    position: relative;
+    bottom: 21px;
+    padding-right: 2%;
+    font-size: large;
+}
 .dp1{
     background-image: url(./images/monogram2a.jpg);
     grid-area: 1/1/7/4;
@@ -274,6 +279,11 @@ footer h4{
     justify-content: space-around;
     width: 30%;
     margin: 3% 0% 3% 0%;
+}
+
+/*banner*/
+.banner{
+    margin-bottom: 5%;
 }
 /*mobile device*/
 
