@@ -294,7 +294,7 @@ footer h4{
 .main-container{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(43, 145px);
+    grid-template-rows: repeat(42, 145px);
     padding: 4%;
 }
 header{
@@ -307,16 +307,18 @@ header{
     opacity: 0.5;
     padding: 5%;
     z-index: 99;
-    color: #eec1b0;
+    color: #fdf3ef;
     position: absolute;
-    left: 18%;
-    top: 150px;
+    left: 5%;
+    top:11px;
     background-color: black;
     font-size: small;
-    opacity: 0.5;
+    opacity: 0.6;
     font-weight: bold;
-    width: 60%;
+    width: 80%;
     text-align: center;
+    padding-bottom: 47%;
+    padding-top: 49%;
 }
 
 
@@ -572,24 +574,43 @@ footer{
     display: block;
     grid-area: 36/1/-1/-1;
     justify-content: space-around;
-    padding: 10% 3% 3% 3%;
+    padding: 10% 3% 0% 3%;
+    text-align: center;
 }
 footer li{
     list-style: none;
-    margin-top: 13%;
+    margin-top: 4%;
 }
 footer a{
     color: #eec1b0;
     text-decoration: none;
 }
 footer h4{
-    margin-bottom: 7%;
+    margin-bottom: 9%;
+    margin-top: 9%;
 }
 .icon{
     display: flex;
     justify-content: space-around;
     width: 30%;
     margin: 3% 0% 3% 0%;
+    position: relative;
+    left: 30%;
+}
+.placeholder{
+    padding: 3% 0% 2% 2%;
+    margin: 9% 0% 9% 0%;
+    font-size: medium;
+    font-weight: bold;
+    width: 40%;
+}
+.Submit{
+    padding: 2% 0% 2% 2%;
+    margin: 9% 0% 9% 0%;
+    font-size: medium;
+    font-weight: bold;
+    border-radius: 13px;
+    border: transparent;
 }
 
 /*banner*/
