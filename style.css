@@ -295,31 +295,38 @@ footer h4{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(42, 145px);
-    padding: 4%;
+    padding: 6%;
 }
 header{
     grid-area: 1/1/4/-1;
     background-image: url(./images/monogram1.jpg);
     background-size: cover;
 }
-
 .headertext{
-    opacity: 0.5;
-    padding: 5%;
-    z-index: 99;
-    color: #fdf3ef;
-    position: absolute;
-    left: 5%;
-    top:11px;
-    background-color: black;
+    height: 21%;
+    margin: 120px 0px 0px 0px;
+    background-color: #000;
+    position: relative;
+    left: 0%;
+    top:40px;
+    width:100%;
+    padding: 6% 0% 6% 0%;
+    text-align: center;
     font-size: small;
+    opacity: 0.6;
+    z-index: 99;
+    color: #fdffff;
+}
+
+/*.headertext{
+
     opacity: 0.6;
     font-weight: bold;
     width: 80%;
-    text-align: center;
+   
     padding-bottom: 47%;
-    padding-top: 49%;
-}
+    
+}*/
 
 
 nav{
@@ -587,7 +594,7 @@ footer a{
 }
 footer h4{
     margin-bottom: 9%;
-    margin-top: 9%;
+    margin-top: 5%;
 }
 .icon{
     display: flex;
@@ -605,7 +612,7 @@ footer h4{
     width: 40%;
 }
 .Submit{
-    padding: 2% 0% 2% 2%;
+    padding: 3%;
     margin: 9% 0% 9% 0%;
     font-size: medium;
     font-weight: bold;
