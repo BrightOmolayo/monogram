@@ -303,14 +303,14 @@ header{
     background-size: cover;
 }
 .headertext{
-    height: 57%;
+    height: 24%;
     margin: 0px 0px 0px 0px;
     background-color: #000;
     position: relative;
     left: 0%;
-    top:0px;
+    top:160px;
     width:100%;
-    padding: 56% 0% 0% 0%;
+    padding: 6% 0% 0% 0%;
     text-align: center;
     font-size: small;
     opacity: 0.6;
