@@ -3,149 +3,284 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>MONOGRAM</title>
+    <link rel="shortcut icon" href="./images/monogramIcon2.jpg" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <script src="https://kit.fontawesome.com/2cbfcacb03.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div class="main-container">
         <header>
+            <div class="dark">
+                <nav>
+                    <div class="logo">
+                        <div class="logoIcon">
+                            <img src="./images/monogramIcon2.jpg" alt="Monogram Icon">
+                        </div>
+                        <div class="monogram">MONOGRAM</div>
+                    </div>
+                    <div class="links">
+                        <ul class="navLinks">
+                            <li><a href="">HOW IT WORKS</a></li>
+                            <li>
+                                <a href="">
+                                    <div>WORKFLOWS <i class="fa-solid fa-caret-down downIcon"></i>
+                                        <div class="workflowDropDown" style="display: none;">
+                                            <ul>
+                                                <li><a href="">AUDIO CONSOLE</a></li>
+                                                <li><a href="">PHOTO CONSOLE</a></li>
+                                                <li><a href="">VIDEO CONSOLE</a></li>
+                                                <li><a href="">MINI CONSOLE</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </a>    
+                            </li>
+                            <li><a href="">DOWNLOAD</a></li>
+                            <li><a href="">BLOG</a></li>
+                            <li><a href="">SUPPORT</a></li>
+                            <li><a href="" class="shop">SHOP</a></li>
+                            <li><a href="" class="bag"><i class="fa-solid fa-bag-shopping"></i></a></li>
+                            <li class="usdlink">
+                                <a href="">
+                                    <div class="usd">USD <i class="fa-solid fa-caret-down downIcon"></i>
+                                        <div class="gbpDropDown" style="display: none;">
+                                            <ul>
+                                                <li><a href="">USD</a></li>
+                                                <li><a href="">CAD</a></li>
+                                                <li><a href="">EUR</a></li>
+                                                <li><a href="">AUD</a></li>
+                                                <li><a href="">GBP</a></li>
+                                                <li><a href="">KRW</a></li>
+                                                <li><a href="">JPY</a></li>
+                                            </ul>
+                                        </div>  
+                                    </div>
+                                </a>    
+                            </li>
+                        </ul>
+                    </div> 
+                </nav>
+                <div class="divider"></div>
+            </div>
             <div class="headertext">
                 <H1>
-                    A CONSOLE FOR EVERY WORKFLOW
+                    A CONSOLE FOR <br> EVERY WORKFLOW
                 </H1>
                 <P>
                     Discover the perfect console for yours.
                 </P>
             </div>
+            <div class="arrowdown">
+                <a href="./404.html"><i class="fa-solid fa-chevron-down"></i></a>
+            </div>
         </header>
         <main>
             <div class="container1">
 
-                <div class="dp1 picture">
-                    <h4 class="order">Pre-order</h4>
-                </div>
-                <div class="dp1text">
-                    <h4>MINI CONSOLE</h4>
-                    <p>Ideal for everyday shortcuts. Adaptable to any workflow.</p>
-
-                    <p class="price-tag">$249</p>
-                </div>
-
-                <div class="dp2 picture">
-                    <h4 class="order">Pre-order</h4>
-                </div>
-                <div class="dp2text">
-                    <h4>AUDIO CONSOLE</h4>
-                    <p>Ideal for music & audio. Adaptable to any workflow.</p>
-                    <p class="price-tag">$499</p>
+                <div class="dp1 picture" id="dp1">
+                    <h4 class="order">PRE-ORDER</h4>
+                    <div class="dp1text" id="dp1text">
+                        <div class="textDiv">
+                            <div class="productName">
+                                <h4>MINI CONSOLE</h4>
+                                <p>Ideal for everyday shortcuts. Adaptable to any workflow.</p>
+                            </div>
+                            <div class="price-section">
+                                <p class="price-tag">$249</p>
+                                <button class="shopbutton shopbutton1" id="shopbutton1">SHOP NOW</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="dp3 picture">
-                    <h4 class="order">Pre-order</h4>
-                </div>
-                <div class="dp3text">
-                    <h4>PHOTO CONSOLE</h4>
-                    <p>Ideal for photo & video. Adaptable to any workflow.</p>
-                    <p class="price-tag">$599</p>
+
+                <div class="dp2 picture" id="dp2">
+                    <h4 class="order">PRE-ORDER</h4>
+                    <div class="dp2text">
+                        <div class="textDiv">
+                            <div class="productName">
+                                <h4>AUDIO CONSOLE</h4>
+                                <p>Ideal for music & audio. Adaptable to any workflow.</p>
+                            </div>
+                            <div class="price-section">
+                                <p class="price-tag">$499</p>
+                                <button class="shopbutton" id="shopbutton2">SHOP NOW</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="dp4 picture">
-                    <h4 class="order">Pre-order</h4>
-                </div>
-                <div class="dp4text">
-                    <h4>VIDEO CONSOLE</h4>
-                    <p>Ideal for Video & Film. Adaptable to any workflow.</p>
-                    <p class="price-tag">$899</p>
+                <div class="dp3 picture" id="dp3" >
+                    <h4 class="order">PRE-ORDER</h4>
+                    <div class="dp3text">
+                        <div class="textDiv">
+                            <div class="productName">
+                                <h4>PHOTO CONSOLE</h4>
+                                <p>Ideal for photo & video. Adaptable to any workflow.</p>
+                            </div>
+                            <div class="price-section">
+                                <p class="price-tag">$599</p>
+                                <button class="shopbutton" id="shopbutton3">SHOP NOW</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
+                <div class="dp4 picture" id="dp4">
+                    <h4 class="order">PRE-ORDER</h4>
+                    <div class="dp4text">
+                        <div class="textDiv">
+                            <div class="productName">
+                                <h4>VIDEO CONSOLE</h4>
+                                <p>Ideal for video & film. Adaptable to any workflow.</p>
+                            </div>
+                            <div class="price-section">
+                                <p class="price-tag">$899</p>
+                                <button class="shopbutton" id="shopbutton4">SHOP NOW</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <div class="banner">
                 <img src="./images/banner.jpg" alt="banner" >
             </div>
-            <div class="dp1text">
-                <h4></h4>
+            <!-- <div class="dp1text">
+                <h4>hedjlnsk;aL</h4>
                 <p></p>
-            </div>
+            </div> -->
 
             <div class="container2">
 
-                <div class="images  sdp1">
-                    <h4 class="order">Pre-order</h4>
-                </div>
-                <div class="sdp1text">
-                    <h4>MONOGRAM  CASE</h4>
-                    <p class="price-tag">$59</p>
-                </div>
-
-                <div class="images   sdp2">
-                    <h4 class="order">Pre-order</h4>
-                </div>
-                <div class="sdp2text">
-                    <h4>MONOGRAM CORE</h4>
-                    <p class="price-tag">$159</p>
+                <div class="images  sdp1 picture" id="sdp1">
+                    <h4 class="order">PRE-ORDER</h4>
+                    <div class="sdp1text">
+                        <div class="miniTextdiv">
+                            <h4>MONOGRAM  CASE</h4>
+                            <div class="price-section">
+                                <p class="price-tag">$59</p>
+                                <button class="shopbutton" id="sdp1Shopbutton">SHOP NOW</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="images   sdp3">
-                    <h4 class="order">Pre-order</h4>
-                </div>
-                <div class="sdp3text">
-                    <h4>SLIDER MODULE</h4>
-                    <p class="price-tag">$129</p>
-                </div>
-
-                <div class="images  sdp4">
-                    <h4 class="order">Pre-order</h4>
-                </div>
-                <div class="sdp4text">
-                    <h4>ESSENTIAL KEYS </h4>
-                    <p class="price-tag">$129</p>
+                <div class="images   sdp2 picture" id="sdp2">
+                    <h4 class="order">PRE-ORDER</h4>
+                    <div class="sdp2text">
+                        <div class="miniTextdiv">
+                            <h4>MONOGRAM  CORE</h4>
+                            <div class="price-section">
+                                <p class="price-tag">$159</p>
+                                <button class="shopbutton" id="sdp2Shopbutton">SHOP NOW</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="images   sdp5">
-                    <h4 class="order">Pre-order</h4>
+                <div class="images   sdp3 picture" id="sdp3">
+                    <h4 class="order">PRE-ORDER</h4>
+                    <div class="sdp3text">
+                        <div class="miniTextdiv">
+                            <h4>SLIDER MODULE</h4>
+                            <div class="price-section">
+                                <p class="price-tag">$129</p>
+                                <button class="shopbutton" id="sdp3Shopbutton">SHOP NOW</button>
+                            </div>
+                        </div>                   
+                    </div>
+    
                 </div>
-                <div class="sdp5text">
-                    <h4>ORBITER MODULE</h4>
-                    <p class="price-tag">$59</p>
-                </div>
-
-                <div class="images sdp6">
-                    <h4 class="order">Pre-order</h4>
-                
-                </div>
-                <div class="sdp6text">
-                    <h4>DIAL MODULE</h4>
-                    <p class="price-tag">$19-$129</p>
-                </div>
-
-                <div class="images  sdp7">
-                </div>
-                <div class="sdp7text">
-                    <h4>CONSOLE PACK: AUDIO</h4>
-                    <p class="price-tag">$129</p>
-                </div>
-
-                <div class="images   sdp8">
-                </div>
-                <div class="sdp8text">
-                    <h4>CONSOLE PACK: PHOTO</h4>
-                    <p class="price-tag">$129</p>
+                <div class="images  sdp4 picture" id="sdp4">
+                    <h4 class="order">PRE-ORDER</h4>
+                    <div class="sdp4text">
+                        <div class="miniTextdiv">
+                            <h4>ESSENTIAL KEYS</h4>
+                            <div class="price-section">
+                                <p class="price-tag">$129</p>
+                                <button class="shopbutton" id="sdp4Shopbutton">SHOP NOW</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="images  sdp9">
-                </div>
-                <div class="sdp9text">
-                    <h4>CONSOLE PACK: VIDEO</h4>
-                    <p class="price-tag">$129</p>
+                <div class="images   sdp5 picture" id="sdp5">
+                    <h4 class="order">PRE-ORDER</h4>
+                    <div class="sdp5text">
+                        <div class="miniTextdiv">
+                            <h4>ORBITER MODULE</h4>
+                            <div class="price-section">
+                                <p class="price-tag">$59</p>
+                                <button class="shopbutton" id="sdp5Shopbutton">SHOP NOW</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="images   sdp10">
+                <div class="images sdp6 picture" id="sdp6">
+                    <h4 class="order">PRE-ORDER</h4>
+                    <div class="sdp6text">
+                        <div class="miniTextdiv">
+                            <h4>DIAL MODULE</h4>
+                            <div class="price-section">
+                                <p class="price-tag">$19-$129</p>
+                                <button class="shopbutton" id="sdp6Shopbutton">SHOP NOW</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="spd10text">
-                    <h4>MONOGRAM CARE</h4>
-                    <p class="price-tag">$129</p>
+
+
+                <div class="images  sdp7 picture" id="sdp7">
+                    <div class="sdp7text">
+                        <div class="miniTextdiv">
+                            <h4>CONSOLE PACK: AUDIO</h4>
+                            <div class="price-section">
+                                <p class="price-tag">$129</p>
+                                <button class="shopbutton" id="sdp7Shopbutton">SHOP NOW</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="images   sdp8 picture" id="sdp8">
+                    <div class="sdp8text">
+                        <div class="miniTextdiv">
+                            <h4>CONSOLE PACK: PHOTO</h4>
+                            <div class="price-section">
+                                <p class="price-tag">$129</p>
+                                <button class="shopbutton" id="sdp8Shopbutton">SHOP NOW</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="images  sdp9 picture" id="sdp9">
+                    <div class="sdp9text">
+                        <div class="miniTextdiv">
+                            <h4>CONSOLE PACK: VIDEO</h4>
+                            <div class="price-section">
+                                <p class="price-tag">$129</p>
+                                <button class="shopbutton" id="sdp9Shopbutton">SHOP NOW</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="images   sdp10 picture" id="sdp10">
+                    <div class="spd10text">
+                        <div class="miniTextdiv">
+                            <h4>MONOGRAM CARE</h4>
+                            <div class="price-section">
+                                <p class="price-tag">$129</p>
+                                <button class="shopbutton" id="sdp10Shopbutton">SHOP NOW</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </main>
@@ -195,5 +330,6 @@
             </div>
         </footer>
     </div>
+    <script src="./main.js"></script>
 </body>
 </html>

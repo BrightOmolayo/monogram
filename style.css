@@ -2,6 +2,16 @@
     padding: 0;
     margin: 0;
 }
+@font-face {
+    font-family: "promptRegular";
+    src: url("./Assets/Prompt-Regular.ttf");
+}
+body{
+    background-color: #f0efed;
+}
+main{
+    padding: 30px 50px;
+}
 img{
     width: 100%;
 }
@@ -15,51 +25,199 @@ header{
     grid-area: 1/1/6/-1;
     background-image: url(./images/monogram1.jpg);
     background-size: cover;
+    background-color: rgba(0, 0, 0, 0.6);
+    background-blend-mode: darken; 
 }
 
 .headertext{
-    opacity: 0.5;
+    text-align: center;
+    color: #efc2b3;
+    font-family: "promptRegular";
+    /* opacity: 0.5;
     padding: 10%;
-    z-index: 99;
     color: #eec1b0;
     position: absolute;
     left: 12%;
     top: 140px;
-    background-color: black;
     font-size: 20px;
-    opacity: 0.5;
-    font-weight: bold;
+    font-weight: bold; */
 }
-
-
+.headertext h1{
+    font-size: 36px;
+    line-height: 44px;
+    letter-spacing: 4px;
+    font-weight: 600;
+}
+.headertext p{
+    margin-top: 24px;
+    font-size: 19px;
+    letter-spacing: 0.2px;
+}
+.arrowdown{
+    text-align: center;
+    margin-top: 205px;
+}
+.arrowdown a{
+    color: white;
+    text-decoration: none;
+    font-size: 50px;
+}
 nav{
-    background-color: blue;
+    background-color: #1a2456;
+    display: flex;
+    justify-content: space-between;
+    margin:  1.3% 1% 1.5% 1.3%;
+    letter-spacing: 1.7px;
+    font-size: 12px;
+    padding: 6px 7px 4px 6px;
+    font-family: "promptRegular";
+    position: fixed;
+    z-index: 99;
+    width: 97%;
 }
+.divider{
+    height: 265px;
+}
+.dark{
+    z-index: 99;
+}
+.logo{
+    display: flex;
+    color: #efc2b3;
+    width: 15%;
+}
+.logo :hover{
+    color: #f9b8a3;
+}
+.shop{
+    font-weight: 600;
+}
+.bag{
+    font-size: 20px;
+    position: relative;
+    bottom: 8px;
+}
+.links{
+    width: 59%;
+}
+.links .downIcon{
+    font-size: 9px;
+    position: relative;
+    bottom: 2px;
+}
+.usdlink{
+    position: relative;
+    right: 2%;
+}
+.monogram{
+    margin: 12px 12px;
+    font-size: 13px;
+    font-weight: 600;
+}
+.navLinks{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 12px;
+    font-size: 12px;
+}
+.navLinks li{
+    list-style: none;
+}
+.navLinks a{
+    color: #eec1b0;
+    text-decoration: none;
+}
+.logoIcon{
+    width: 28%;
+    display: block;
+}
+/* .logoIcon :hover{
+    filter: invert(75%) sepia(48%) saturate(386%) hue-rotate(319deg) brightness(100%) contrast(96%);
+} */
 main{
     grid-area: 6/1/30/-1;
+    font-family: "promptRegular";
 }
-
-
 .container1{
     display: grid;
     grid-template-columns: repeat( 6, 1fr);
     grid-template-rows: repeat(15, 50px);
-    gap: 20px  50px;
+    gap: 20px 16px;
     padding: 20px;
 }
-
-.order{
-    background-color: orangered;
-    color: #fff;
-    float: right;
+main h4{
+    color: #1a2456 ;
 }
-.price-tag{
+.order{
+    background-color:#ff8d6b;
     float: right;
+    margin-top: 18px;
+    height: 23px;
+    width: 18%;
+    text-align: center;
+    padding-top: 7px;
+    font-size: small;
+    letter-spacing: 0.8px;
+    color: #161616;
+}
+.container2 .order{
+    background-color:#ff8d6b;
+    float: right;
+    margin-top: 18px;
+    height: 23px;
+    width: 27%;
+    text-align: center;
+    padding-top: 7px;
+    font-size: small;
+    letter-spacing: 0.8px;
+    color: #161616;
+}
+.container1 p{
+    font-size: small;
+    color: #1a2456 ;
+}
+/* .price-tag{
+    /* float: right;
     position: relative;
     bottom: 21px;
     padding-right: 2%;
-    font-size: large;
+    font-size: large; 
 }
+    */
+.textDiv{
+    display: flex;
+    justify-content: space-between;
+}
+.miniTextdiv{
+    display: flex;
+    justify-content: space-between;
+}
+.dp1text,
+.dp2text,
+.dp3text,
+.dp4text{
+    position: relative;
+    top: 400px;
+    border: 2px solid saddlebrown;
+    padding: 38px 0px 8px 0px;
+}
+.sdp1text,
+.sdp2text,
+.sdp3text,
+.sdp4text,
+.sdp5text,
+.sdp6text,
+.sdp7text,
+.sdp8text,
+.sdp9text,
+.sdp10text{
+    position: relative;
+    top: 300px;
+    border: 2px solid saddlebrown;
+}
+/* .shopbutton{
+    visibility: hidden;
+} */
 .dp1{
     background-image: url(./images/monogram2a.jpg);
     grid-area: 1/1/7/4;
@@ -73,8 +231,6 @@ main{
 .dp1text{
     grid-area: 7/1/8/4;
 }
-
-
 .dp2{
     background-image: url(./images/monogram3a.jpg);
     grid-area: 1/4/7/-1;
