@@ -147,6 +147,8 @@ main{
 }
 main h4{
     color: #1a2456 ;
+    letter-spacing: 2px;
+    font-weight:700;
 }
 .order{
     background-color:#ff8d6b;
@@ -176,6 +178,10 @@ main h4{
     font-size: small;
     color: #1a2456 ;
 }
+.container1 p:hover{
+    color: #000;
+    padding-top: 12px;
+}
 /* .price-tag{
     /* float: right;
     position: relative;
@@ -187,10 +193,14 @@ main h4{
 .textDiv{
     display: flex;
     justify-content: space-between;
+    background-color: transparent;
+    padding: 5px 0px 18px 0px;
 }
 .miniTextdiv{
     display: flex;
     justify-content: space-between;
+    background-color:transparent;
+    width: 100%;
 }
 .dp1text,
 .dp2text,
@@ -198,8 +208,7 @@ main h4{
 .dp4text{
     position: relative;
     top: 400px;
-    border: 2px solid saddlebrown;
-    padding: 38px 0px 8px 0px;
+    width: 100%;
 }
 .sdp1text,
 .sdp2text,
@@ -213,7 +222,10 @@ main h4{
 .sdp10text{
     position: relative;
     top: 300px;
-    border: 2px solid saddlebrown;
+}
+.container1 .price-section{
+    position: relative;
+    left:22.4%;
 }
 /* .shopbutton{
     visibility: hidden;
