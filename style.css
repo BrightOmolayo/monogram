@@ -177,19 +177,21 @@ main h4{
 .container1 p{
     font-size: small;
     color: #1a2456 ;
+    padding-top: 12px;
 }
 .container1 p:hover{
     color: #000;
-    padding-top: 12px;
 }
-/* .price-tag{
-    /* float: right;
-    position: relative;
-    bottom: 21px;
-    padding-right: 2%;
-    font-size: large; 
+.shopbutton{
+   padding: 5% 1%;
+   color: white;
+   border-radius: 30px;
+   display: none;
+   width: 100%;
+   font-size: 11px;
+   border: transparent;
 }
-    */
+
 .textDiv{
     display: flex;
     justify-content: space-between;
@@ -226,6 +228,15 @@ main h4{
 .container1 .price-section{
     position: relative;
     left:22.4%;
+    border: 2px solid green;
+    width: 25%;
+}
+.container1 .price-tag{
+    font-size: small;
+    color: #1a2456 ;
+    padding-top: 12px;
+    position: relative;
+    left: 44%;
 }
 /* .shopbutton{
     visibility: hidden;
@@ -518,12 +529,21 @@ main{
     color: #fff;
     float: right;
 }
-.price-tag{
-    float: right;
+.price-section .price-tag{
+    /* float: right; */
     position: relative;
     bottom: 21px;
-    padding-right: 2%;
+    left: 13%;
     font-size: large;
+     display: none;
+}
+.container1 .price-tag{
+    /* float: right; */
+    position: relative;
+    bottom: 21px;
+    left: 103%;
+    font-size: large;
+
 }
 .dp1{
     background-image: url(./images/monogram2a.jpg);
