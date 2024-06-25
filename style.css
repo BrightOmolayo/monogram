@@ -1,6 +1,7 @@
 *{
     padding: 0;
     margin: 0;
+    font-family: "promptRegular";
 }
 @font-face {
     font-family: "promptRegular";
@@ -179,17 +180,25 @@ main h4{
     color: #1a2456 ;
     padding-top: 12px;
 }
+.productName{
+    width: 75%;
+}
 .container1 p:hover{
     color: #000;
 }
 .shopbutton{
-   padding: 5% 1%;
+   padding: 7% 1%;
    color: white;
    border-radius: 30px;
    display: none;
-   width: 100%;
+   width: 90%;
    font-size: 11px;
    border: transparent;
+   margin-top: 0px;
+   font-weight: 600;
+   margin-left: 13px;
+   transition-duration: 1s;
+   transition-timing-function: ease-in-out;
 }
 
 .textDiv{
@@ -197,12 +206,17 @@ main h4{
     justify-content: space-between;
     background-color: transparent;
     padding: 5px 0px 18px 0px;
+    width: 100%;
+    position: relative;
+    bottom: 45px;
 }
 .miniTextdiv{
     display: flex;
     justify-content: space-between;
     background-color:transparent;
     width: 100%;
+    position: relative;
+    bottom: 45px;
 }
 .dp1text,
 .dp2text,
@@ -226,21 +240,40 @@ main h4{
     top: 300px;
 }
 .container1 .price-section{
-    position: relative;
-    left:22.4%;
-    border: 2px solid green;
+    width: 24%;
+}
+.container2 .price-section{
     width: 25%;
 }
 .container1 .price-tag{
-    font-size: small;
+    font-size: medium;
     color: #1a2456 ;
-    padding-top: 12px;
-    position: relative;
-    left: 44%;
+    padding-top: 0px;
+    padding-left: 90px;
+    font-weight: lighter;
 }
-/* .shopbutton{
-    visibility: hidden;
-} */
+.container2 .price-tag{
+    font-size: medium;
+    color: #1a2456 ;
+    padding-top: 0px;
+    padding-left: 60px;
+    font-weight: lighter;
+}
+.container2 .dialModule{
+    padding-left:27px ;
+}
+#miniTextdiv1,
+#miniTextdiv2,
+#miniTextdiv3{
+    position: relative;
+    top: 5px;
+    bottom: 0px;
+}
+#miniTextdiv4{
+    position: relative;
+    top: 305px;
+    bottom: 0px;
+}
 .dp1{
     background-image: url(./images/monogram2a.jpg);
     grid-area: 1/1/7/4;
@@ -439,35 +472,91 @@ footer{
     color: #eec1b0;
     display: flex;
     grid-area: 29/1/-1/14;
-    justify-content: space-around;
-    padding-top: 5%;
+    justify-content: space-between;
+    margin-top: 5%;
+    padding: 5% 5% 0% 5%;
 }
 footer li{
     list-style: none;
     margin-top: 13%;
 }
+footer div{
+    font-size: small;
+}
 footer a{
     color: #eec1b0;
     text-decoration: none;
 }
+.subscribe{
+    width: 30%;
+}
+.subscribe br{
+    display: none;
+}
 footer h4{
-    margin-bottom: 7%;
+    margin-bottom: 18px;
+    padding-bottom: 5%;
+    font-size: 10px;
+    letter-spacing: 1px;
 }
 .icon{
     display: flex;
-    justify-content: space-around;
-    width: 30%;
-    margin: 3% 0% 3% 0%;
-}
+    justify-content: space-between;
+    width: 40%;
+    margin: 0% 0% 3% 0%;
 
+}
+.icon a{
+    background-color: #eec1b0;
+    color: #1a2456;
+    font-size: 14px;
+    padding: 2px 8px;
+    border-radius: 50%;
+    margin-top: 10px;
+}
 /*banner*/
+
 .banner{
     margin-bottom: 5%;
 }
-
+.bannerText{
+    text-align: center;
+    position: relative;
+    top: 120px;
+    word-spacing: 4px;
+    letter-spacing: 1px;
+    font-size: large;
+    color: #1a2456;
+}
+.bannerText h1{
+    word-spacing: 4px;
+    letter-spacing: 3px;
+    font-weight: 700;
+}
+.submit{
+    padding: 7px 32px;
+    margin: 2% 0% 1% 0%;
+    font-size: 11px;
+    font-weight: bold;
+    border-radius: 20px;
+    border: transparent;
+    background-color: #a58b93;
+    color: #151d45;
+    letter-spacing: 1px;
+}
+.placeholder{
+    background-color: transparent;
+    border: 1px solid #eec1b0;
+    padding: 6px 3px 6px 10px;
+    margin-right: 4%;
+    width: 46%;
+}
+.hamburger{
+    display: none;
+}
 /*mobile device*/
 
-@media only screen and (max-width:767px){
+@media only screen and (max-width:480px){
 
 
 .main-container{
@@ -799,13 +888,14 @@ footer h4{
     font-weight: bold;
     width: 40%;
 }
-.Submit{
+.submit{
     padding: 3%;
     margin: 9% 0% 9% 0%;
     font-size: medium;
     font-weight: bold;
     border-radius: 13px;
     border: transparent;
+    border: 2px solid green;
 }
 
 /*banner*/
@@ -813,4 +903,1109 @@ footer h4{
     margin-bottom: 5%;
 }
 
+}
+@media  screen and  (min-width:1024px) and (max-width:1200px){
+
+    body{
+        background-color: #f0efed;
+    }
+    main{
+        padding: 30px 50px;
+    }
+    img{
+        width: 100%;
+    }
+    
+    .main-container{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(32, 145px);
+    }
+    header{
+        grid-area: 1/1/6/-1;
+        background-image: url(./images/monogram1.jpg);
+        background-size: cover;
+        background-color: rgba(0, 0, 0, 0.6);
+        background-blend-mode: darken; 
+    }
+    
+    .headertext{
+        text-align: center;
+        color: #efc2b3;
+        font-family: "promptRegular";
+        /* opacity: 0.5;
+        padding: 10%;
+        color: #eec1b0;
+        position: absolute;
+        left: 12%;
+        top: 140px;
+        font-size: 20px;
+        font-weight: bold; */
+    }
+    .headertext h1{
+        font-size: 36px;
+        line-height: 44px;
+        letter-spacing: 4px;
+        font-weight: 600;
+    }
+    .headertext p{
+        margin-top: 24px;
+        font-size: 19px;
+        letter-spacing: 0.2px;
+    }
+    .arrowdown{
+        text-align: center;
+        margin-top: 205px;
+    }
+    .arrowdown a{
+        color: white;
+        text-decoration: none;
+        font-size: 50px;
+    }
+    nav{
+        background-color: #1a2456;
+        display: flex;
+        justify-content: space-between;
+        margin:  1.3% 1% 1.5% 1.3%;
+        letter-spacing: 1.7px;
+        font-size: 12px;
+        padding: 6px 7px 4px 6px;
+        font-family: "promptRegular";
+        position: fixed;
+        z-index: 99;
+        width: 97%;
+    }
+    .divider{
+        height: 265px;
+    }
+    .dark{
+        z-index: 99;
+    }
+    .logo{
+        display: flex;
+        color: #efc2b3;
+        width: 15%;
+    }
+    .logo :hover{
+        color: #f9b8a3;
+    }
+    .shop{
+        font-weight: 600;
+    }
+    .bag{
+        font-size: 20px;
+        position: relative;
+        bottom: 8px;
+    }
+    .links{
+        width: 73%;
+    }
+    .links .downIcon{
+        font-size: 9px;
+        position: relative;
+        bottom: 2px;
+    }
+    .usdlink{
+        position: relative;
+        right: 2%;
+    }
+    .monogram{
+        margin: 12px 12px;
+        font-size: 13px;
+        font-weight: 600;
+    }
+    .navLinks{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 12px;
+        font-size: 12px;
+    }
+    .navLinks li{
+        list-style: none;
+    }
+    .navLinks a{
+        color: #eec1b0;
+        text-decoration: none;
+    }
+    .logoIcon{
+        width: 28%;
+        display: block;
+    }
+    /* .logoIcon :hover{
+        filter: invert(75%) sepia(48%) saturate(386%) hue-rotate(319deg) brightness(100%) contrast(96%);
+    } */
+    main{
+        grid-area: 6/1/30/-1;
+        font-family: "promptRegular";
+    }
+    .container1{
+        display: grid;
+        grid-template-columns: repeat( 6, 1fr);
+        grid-template-rows: repeat(15, 50px);
+        gap: 20px 16px;
+        padding: 20px;
+    }
+    main h4{
+        color: #1a2456 ;
+        letter-spacing: 2px;
+        font-weight:700;
+    }
+    .order{
+        background-color:#ff8d6b;
+        float: right;
+        margin-top: 18px;
+        height: 23px;
+        width: 21%;
+        text-align: center;
+        padding-top: 7px;
+        font-size: small;
+        letter-spacing: 0.8px;
+        color: #161616;
+    }
+    .container2 .order{
+        background-color:#ff8d6b;
+        float: right;
+        margin-top: 18px;
+        height: 23px;
+        width: 32%;
+        text-align: center;
+        padding-top: 7px;
+        font-size: small;
+        letter-spacing: 0.8px;
+        color: #161616;
+    }
+    .container1 p{
+        font-size: small;
+        color: #1a2456 ;
+        padding-top: 12px;
+    }
+    .productName{
+        width: 75%;
+    }
+    .container1 p:hover{
+        color: #000;
+    }
+    .shopbutton{
+       padding: 7% 1%;
+       color: white;
+       border-radius: 30px;
+       display: none;
+       width: 90%;
+       font-size: 11px;
+       border: transparent;
+       margin-top: 0px;
+       font-weight: 600;
+       margin-left: 13px;
+       transition-duration: 1s;
+       transition-timing-function: ease-in-out;
+    }
+    
+    .textDiv{
+        display: flex;
+        justify-content: space-between;
+        background-color: transparent;
+        padding: 5px 0px 18px 0px;
+        width: 100%;
+        position: relative;
+        bottom: 45px;
+    }
+    .miniTextdiv{
+        display: flex;
+        justify-content: space-between;
+        background-color:transparent;
+        width: 100%;
+        position: relative;
+        bottom: 45px;
+    }
+    .dp1text,
+    .dp2text,
+    .dp3text,
+    .dp4text{
+        position: relative;
+        top: 400px;
+        width: 100%;
+    }
+    .sdp1text,
+    .sdp2text,
+    .sdp3text,
+    .sdp4text,
+    .sdp5text,
+    .sdp6text,
+    .sdp7text,
+    .sdp8text,
+    .sdp9text,
+    .sdp10text{
+        position: relative;
+        top: 300px;
+    }
+    .container1 .price-section{
+        width: 24%;
+    }
+    .container2 .price-section{
+        width: 25%;
+    }
+    .container1 .price-tag{
+        font-size: medium;
+        color: #1a2456 ;
+        padding-top: 0px;
+        padding-left: 60px;
+        font-weight: lighter;
+    }
+    .container2 .price-tag{
+        font-size: medium;
+        color: #1a2456 ;
+        padding-top: 0px;
+        padding-left: 32px;
+        font-weight: lighter;
+    }
+    .container2 .dialModule{
+        padding-left:3px ;
+    }
+    #miniTextdiv1,
+    #miniTextdiv2,
+    #miniTextdiv3{
+        position: relative;
+        top: 5px;
+        bottom: 0px;
+    }
+    #miniTextdiv4{
+        position: relative;
+        top: 305px;
+        bottom: 0px;
+    }
+    .dp1{
+        background-image: url(./images/monogram2a.jpg);
+        grid-area: 1/1/7/4;
+        transition-duration: 2s;
+        background-size:cover;
+        background-position: center;
+    }
+    .dp1:hover{
+        background-image: url(./images/monogram2b.jpg);
+    }
+    .dp1text{
+        grid-area: 7/1/8/4;
+    }
+    .dp2{
+        background-image: url(./images/monogram3a.jpg);
+        grid-area: 1/4/7/-1;
+        transition-duration: 2s;
+        background-size:cover;
+        background-position: center;
+    }
+    .dp2:hover{
+        background-image: url(./images/monogram3b.jpg);
+    }
+    .dp2text{
+        grid-area: 7/4/8/-1;
+    }
+    
+    
+    
+    .dp3{
+        background-image: url(./images/monogram4a.jpg);
+        grid-area: 8/1/14/4;
+        transition-duration: 2s;
+        background-size:cover;
+        background-position: center;
+    }
+    .dp3:hover{
+        background-image: url(./images/monogram4b.jpg);
+    }
+    .dp3text{
+        grid-area: 14/1/15/4;
+    }
+    
+    
+    .dp4{
+        background-image: url(./images/monogram5a.jpg);
+        grid-area: 8/4/14/-1;
+        transition-duration: 2s;
+        background-size:cover;
+        background-position: center;
+    }
+    .dp4:hover{
+        background-image: url(./images/monogram5b.jpg);
+    }
+    .dp4text{
+        grid-area: 14/4/15/-1;
+    }
+    
+    
+    .picture{
+        background-size: cover;
+    }
+    
+    
+    .container2{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(20, 91px);
+        gap: 10px 40px;
+    
+    }
+    
+    
+    .sdp1{
+        grid-area: 1/1/4/3;
+        background-image: url(./images/case1.jpg);
+        background-size:cover;
+        background-position: center;
+        transition-duration: 2s;
+        transition-timing-function: ease-in-out;
+        display: block;
+    }
+    .sdp1:hover{
+        background-image: url(./images/case2.jpg);
+    }
+    
+    
+    
+    .sdp2{
+        grid-area: 1/3/4/-1;
+        background-image: url(./images/monogram6a.jpg);
+        background-size:cover;
+        background-position: center;
+        transition-duration: 2s;
+        transition-timing-function: ease-in-out;
+    }
+    .sdp2:hover{
+        background-image: url(./images/monogram6b.jpg);
+    }
+    
+    
+    .sdp3{
+        grid-area: 5/1/8/3;
+        background-image: url(./images/monogram7a.jpg);
+        background-size:cover;
+        background-position: center;
+        transition-duration: 2s;
+        transition-timing-function: ease-in-out;
+    }
+    .sdp3:hover{
+        background-image: url(./images/monogram7b.jpg);
+    }
+    
+    
+    
+    .sdp4{
+        grid-area: 5/3/8/-1;
+        background-image: url(./images/monogram8a.jpg);
+        background-size:cover;
+        background-position: center;
+        transition-duration: 2s;
+        transition-timing-function: ease-in-out;
+    }
+    .sdp4:hover{
+        background-image: url(./images/monogram8b.jpg);
+    }
+    
+    
+    
+    .sdp5{
+        grid-area: 9/1/12/3;
+        background-image: url(./images/monogram9a.jpg);
+        background-size:cover;
+        background-position: center;
+        transition-duration: 2s;
+        transition-timing-function: ease-in-out;
+    }
+    .sdp5:hover{
+        background-image: url(./images/monogram9b.jpg);
+    }
+    
+    
+    
+    .sdp6{
+        grid-area: 9/3/12/-1;
+        background-image: url(./images/monogram10a.jpg);
+        background-size:cover;
+        background-position: center;
+        transition-duration: 2s;
+        transition-timing-function: ease-in-out;
+    }
+    .sdp6:hover{
+        background-image: url(./images/monogram10b.jpg);
+    }
+    
+    
+    
+    .sdp7{
+        grid-area: 13/1/16/3;
+        background-image: url(./images/monogram11.jpg);
+        background-size:cover;
+        background-position: center;
+    }
+    
+    .sdp8{
+        grid-area: 13/3/16/-1;
+        background-image: url(./images/monogram12.jpg);
+        background-size:cover;
+        background-position: center;
+    }
+    
+    .sdp9{
+        grid-area: 17/1/20/3;
+        background-image: url(./images/monogram13.jpg);
+        background-size:cover;
+        background-position: center;
+    }
+    
+    .sdp10{
+        grid-area: 17/3/20/-1;
+        background-image: url(./images/monogram14a.jpg);
+        background-size:cover;
+        background-position: center;
+        transition-duration: 2s;
+        transition-timing-function: ease-in-out;
+    }
+    .sdp10:hover{
+        background-image: url(./images/monogram14b.jpg);
+    }
+    .spd10text{
+        grid-area: 16/1/-1/2;
+    }
+    /*footer*/
+    footer{
+        background-color: #1a2456;
+        color: #eec1b0;
+        display: flex;
+        grid-area: 30/1/-1/14;
+        justify-content: space-between;
+        margin-top: 15%;
+        padding: 5% 5% 0% 5%;
+    }
+    footer li{
+        list-style: none;
+        margin-top: 13%;
+    }
+    footer div{
+        font-size: small;
+    }
+    footer a{
+        color: #eec1b0;
+        text-decoration: none;
+    }
+    .subscribe{
+        width: 30%;
+    }
+    .subscribe br{
+        display: none;
+    }
+    footer h4{
+        margin-bottom: 18px;
+        padding-bottom: 5%;
+        font-size: 10px;
+        letter-spacing: 1px;
+    }
+    .hamburger{
+        display: none;
+    }
+    .icon{
+        display: flex;
+        justify-content: space-between;
+        width: 50%;
+        margin: 0% 0% 3% 0%;
+    
+    }
+    .icon a{
+        background-color: #eec1b0;
+        color: #1a2456;
+        font-size: 14px;
+        padding: 2px 8px;
+        border-radius: 50%;
+        margin-top: 10px;
+    }
+    /*banner*/
+    .banner{
+        margin-bottom: 5%;
+    }
+    .bannerText{
+        text-align: center;
+        position: relative;
+        top: 80px;
+    }
+    .submit{
+        padding: 7px 32px;
+        margin: 2% 0% 1% 0%;
+        font-size: 11px;
+        font-weight: bold;
+        border-radius: 20px;
+        border: transparent;
+        background-color: #a58b93;
+        color: #151d45;
+        letter-spacing: 1px;
+    }
+    .placeholder{
+        background-color: transparent;
+        border: 1px solid #eec1b0;
+        padding: 6px 3px 6px 10px;
+        margin-right: 4%;
+        width: 46%;
+    }
+}
+@media  screen and  (min-width:481px) and (max-width:768px){
+   
+    body{
+        background-color: #f0efed;
+    }
+    main{
+        padding: 30px 20px;
+    }
+    img{
+        width: 100%;
+    }
+    
+    .main-container{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(32, 145px);
+    }
+    header{
+        grid-area: 1/1/6/-1;
+        background-image: url(./images/monogram1.jpg);
+        background-size: cover;
+        background-color: rgba(0, 0, 0, 0.6);
+        background-blend-mode: darken; 
+    }
+    
+    .headertext{
+        text-align: center;
+        color: #efc2b3;
+        font-family: "promptRegular";
+        /* opacity: 0.5;
+        padding: 10%;
+        color: #eec1b0;
+        position: absolute;
+        left: 12%;
+        top: 140px;
+        font-size: 20px;
+        font-weight: bold; */
+    }
+    .headertext h1{
+        font-size: 37px;
+        line-height: 44px;
+        letter-spacing: 4px;
+        font-weight: 600;
+    }
+    .headertext p{
+        margin-top: 24px;
+        font-size: 19px;
+        letter-spacing: 0.2px;
+    }
+    .arrowdown{
+        text-align: center;
+        margin-top: 205px;
+    }
+    .arrowdown a{
+        color: white;
+        text-decoration: none;
+        font-size: 50px;
+    }
+    nav{
+        background-color: #1a2456;
+        display: flex;
+        justify-content: space-between;
+        margin:   12px 18px;
+        letter-spacing: 1.7px;
+        font-size: 12px;
+        padding: 6px 7px 4px 6px;
+        font-family: "promptRegular";
+        position: fixed;
+        z-index: 99;
+        width: 94%;
+    }
+    .divider{
+        height: 265px;
+    }
+    .dark{
+        z-index: 99;
+    }
+    .logo{
+        display: flex;
+        color: #efc2b3;
+        width: 25%;
+    }
+    .logo :hover{
+        color: #f9b8a3;
+    }
+    .shop{
+        font-weight: 600;
+    }
+    .bag{
+        font-size: 20px;
+        position: relative;
+        bottom: 8px;
+    }
+    .links{
+     display: none;
+    }
+    .links .downIcon{
+        font-size: 9px;
+        position: relative;
+        bottom: 2px;
+    }
+    .usdlink{
+        position: relative;
+        right: 2%;
+    }
+    .monogram{
+        margin: 12px 12px;
+        font-size: 13px;
+        font-weight: 600;
+    }
+    .navLinks{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 12px;
+        font-size: 12px;
+    }
+    .navLinks li{
+        list-style: none;
+    }
+    .navLinks a{
+        color: #eec1b0;
+        text-decoration: none;
+    }
+    .logoIcon{
+        width: 28%;
+        display: block;
+    }
+    /* .logoIcon :hover{
+        filter: invert(75%) sepia(48%) saturate(386%) hue-rotate(319deg) brightness(100%) contrast(96%);
+    } */
+    main{
+        grid-area: 6/1/28/-1;
+        font-family: "promptRegular";
+    }
+    .container1{
+        display: grid;
+        grid-template-columns: repeat( 6, 1fr);
+        grid-template-rows: repeat(10, 50px);
+        gap: 20px 16px;
+        padding: 20px;
+    }
+    main h4{
+        color: #1a2456 ;
+        letter-spacing: 2px;
+        font-weight:700;
+    }
+    .order{
+        background-color:#ff8d6b;
+        float: right;
+        margin-top: 18px;
+        height: 22px;
+        width: 26%;
+        text-align: center;
+        padding-top: 7px;
+        font-size: small;
+        letter-spacing: 0.8px;
+        color: #161616;
+    }
+    .container2 .order{
+        background-color:#ff8d6b;
+        float: right;
+        margin-top: 18px;
+        height: 23px;
+        width: 32%;
+        text-align: center;
+        padding-top: 7px;
+        font-size: small;
+        letter-spacing: 0.8px;
+        color: #161616;
+    }
+    .container1 p{
+        font-size: small;
+        color: #1a2456 ;
+        padding-top: 5px;
+    }
+    .productName{
+        width: 75%;
+    }
+    .container1 p:hover{
+        color: #000;
+    }
+    .shopbutton{
+       padding: 7% 1%;
+       color: white;
+       border-radius: 30px;
+       display: none;
+       width: 90%;
+       font-size: 11px;
+       border: transparent;
+       margin-top: 0px;
+       font-weight: 600;
+       margin-left: 13px;
+       transition-duration: 1s;
+       transition-timing-function: ease-in-out;
+    }
+    
+    .textDiv{
+        display: flex;
+        justify-content: space-between;
+        background-color: transparent;
+        padding: 5px 0px 18px 0px;
+        width: 100%;
+        position: relative;
+        bottom: 45px;
+    }
+    .miniTextdiv{
+        display: flex;
+        justify-content: space-between;
+        background-color:transparent;
+        width: 100%;
+        position: relative;
+        bottom: 45px;
+    }
+    .dp1text,
+    .dp2text,
+    .dp3text,
+    .dp4text{
+        position: relative;
+        top: 260px;
+        width: 100%;
+    }
+    .sdp1text,
+    .sdp2text,
+    .sdp3text,
+    .sdp4text,
+    .sdp5text,
+    .sdp6text,
+    .sdp7text,
+    .sdp8text,
+    .sdp9text,
+    .sdp10text{
+        position: relative;
+        top: 300px;
+    }
+    .container1 .price-section{
+        width: 24%;
+    }
+    .container2 .price-section{
+        width: 25%;
+    }
+    .container1 .price-tag{
+        font-size: 14px;
+        color: #353c5d ;
+        padding-top: 0px;
+        padding-left: 40px;
+        font-weight: lighter;
+    }
+    .container2 .price-tag{
+        font-size: medium;
+        color: #1a2456 ;
+        padding-top: 0px;
+        padding-left: 32px;
+        font-weight: lighter;
+    }
+    .container2 .dialModule{
+        padding-left:3px ;
+    }
+    #miniTextdiv1,
+    #miniTextdiv2,
+    #miniTextdiv3{
+        position: relative;
+        top: 5px;
+        bottom: 0px;
+    }
+    #miniTextdiv4{
+        position: relative;
+        top: 305px;
+        bottom: 0px;
+    }
+    .dp1{
+        background-image: url(./images/monogram2a.jpg);
+        grid-area: 1/1/5/4;
+        transition-duration: 2s;
+        background-size:cover;
+        background-position: center;
+    }
+    .dp1:hover{
+        background-image: url(./images/monogram2b.jpg);
+    }
+    .dp1text{
+        grid-area: 5/1/6/4;
+    }
+    .dp2{
+        background-image: url(./images/monogram3a.jpg);
+        grid-area: 1/4/5/-1;
+        transition-duration: 2s;
+        background-size:cover;
+        background-position: center;
+    }
+    .dp2:hover{
+        background-image: url(./images/monogram3b.jpg);
+    }
+    .dp2text{
+        grid-area: 5/4/6/-1;
+    }
+    
+    
+    
+    .dp3{
+        background-image: url(./images/monogram4a.jpg);
+        grid-area: 6/1/10/4;
+        transition-duration: 2s;
+        background-size:cover;
+        background-position: center;
+    }
+    .dp3:hover{
+        background-image: url(./images/monogram4b.jpg);
+    }
+    .dp3text{
+        grid-area: 14/1/15/4;
+    }
+    
+    
+    .dp4{
+        background-image: url(./images/monogram5a.jpg);
+        grid-area: 6/4/10/-1;
+        transition-duration: 2s;
+        background-size:cover;
+        background-position: center;
+    }
+    .dp4:hover{
+        background-image: url(./images/monogram5b.jpg);
+    }
+    .dp4text{
+        grid-area: 14/4/15/-1;
+    }
+    
+    
+    .picture{
+        background-size: cover;
+    }
+    
+    
+    .container2{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(20, 91px);
+        gap: 10px 40px;
+    
+    }
+    
+    
+    .sdp1{
+        grid-area: 1/1/4/3;
+        background-image: url(./images/case1.jpg);
+        background-size:cover;
+        background-position: center;
+        transition-duration: 2s;
+        transition-timing-function: ease-in-out;
+        display: block;
+    }
+    .sdp1:hover{
+        background-image: url(./images/case2.jpg);
+    }
+    
+    
+    
+    .sdp2{
+        grid-area: 1/3/4/-1;
+        background-image: url(./images/monogram6a.jpg);
+        background-size:cover;
+        background-position: center;
+        transition-duration: 2s;
+        transition-timing-function: ease-in-out;
+    }
+    .sdp2:hover{
+        background-image: url(./images/monogram6b.jpg);
+    }
+    
+    
+    .sdp3{
+        grid-area: 5/1/8/3;
+        background-image: url(./images/monogram7a.jpg);
+        background-size:cover;
+        background-position: center;
+        transition-duration: 2s;
+        transition-timing-function: ease-in-out;
+    }
+    .sdp3:hover{
+        background-image: url(./images/monogram7b.jpg);
+    }
+    
+    
+    
+    .sdp4{
+        grid-area: 5/3/8/-1;
+        background-image: url(./images/monogram8a.jpg);
+        background-size:cover;
+        background-position: center;
+        transition-duration: 2s;
+        transition-timing-function: ease-in-out;
+    }
+    .sdp4:hover{
+        background-image: url(./images/monogram8b.jpg);
+    }
+    
+    
+    
+    .sdp5{
+        grid-area: 9/1/12/3;
+        background-image: url(./images/monogram9a.jpg);
+        background-size:cover;
+        background-position: center;
+        transition-duration: 2s;
+        transition-timing-function: ease-in-out;
+    }
+    .sdp5:hover{
+        background-image: url(./images/monogram9b.jpg);
+    }
+    
+    
+    
+    .sdp6{
+        grid-area: 9/3/12/-1;
+        background-image: url(./images/monogram10a.jpg);
+        background-size:cover;
+        background-position: center;
+        transition-duration: 2s;
+        transition-timing-function: ease-in-out;
+    }
+    .sdp6:hover{
+        background-image: url(./images/monogram10b.jpg);
+    }
+    
+    
+    
+    .sdp7{
+        grid-area: 13/1/16/3;
+        background-image: url(./images/monogram11.jpg);
+        background-size:cover;
+        background-position: center;
+    }
+    
+    .sdp8{
+        grid-area: 13/3/16/-1;
+        background-image: url(./images/monogram12.jpg);
+        background-size:cover;
+        background-position: center;
+    }
+    
+    .sdp9{
+        grid-area: 17/1/20/3;
+        background-image: url(./images/monogram13.jpg);
+        background-size:cover;
+        background-position: center;
+    }
+    
+    .sdp10{
+        grid-area: 17/3/20/-1;
+        background-image: url(./images/monogram14a.jpg);
+        background-size:cover;
+        background-position: center;
+        transition-duration: 2s;
+        transition-timing-function: ease-in-out;
+    }
+    .sdp10:hover{
+        background-image: url(./images/monogram14b.jpg);
+    }
+    .spd10text{
+        grid-area: 16/1/-1/2;
+    }
+    /*footer*/
+    footer{
+        background-color: #1a2456;
+        color: #eec1b0;
+        display: block;
+        grid-area: 28/1/-1/14;
+        margin-top: 15%;
+        padding: 5% 5% 0% 5%;
+    }
+    .footerDivs{
+        display: block;
+    
+    }
+    .section1{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 50px;
+        margin-left: 5%;
+    }
+    .section2{
+        display: flex;
+        justify-content: space-around;
+    }
+    .subscribeDesktop{
+        display: none;
+    }
+    footer li{
+        list-style: none;
+        margin-top: 13%;
+    }
+    footer div{
+        font-size: small;
+    }
+    footer a{
+        color: #eec1b0;
+        text-decoration: none;
+    }
+    .subscribe{
+        width: 70%;
+        border: 2px solid firebrick;
+        margin-left: 10%;
+    }
+    .subscribe br{
+        display: none;
+    }
+    footer h4{
+        margin-bottom: 18px;
+        padding-bottom: 5%;
+        font-size: 10px;
+        letter-spacing: 1px;
+    }
+    .hamburger{
+        display: flex;
+        color: #eec1b0;
+    }
+    .icon{
+        display: flex;
+        justify-content: space-between;
+        width: 50%;
+        margin: 0% 0% 3% 0%;
+    
+    }
+    .icon a{
+        background-color: #eec1b0;
+        color: #1a2456;
+        font-size: 14px;
+        padding: 2px 8px;
+        border-radius: 50%;
+        margin-top: 10px;
+    }
+    /*banner*/
+    .banner{
+        margin-bottom: 5%;
+    }
+    .bannerText{
+        text-align: center;
+        position: relative;
+        top: 100px;
+    }
+    .bannerText h1{
+        word-spacing: 4px;
+        letter-spacing: 3px;
+        font-weight: 700;
+    }
+    .submit{
+        padding: 7px 32px;
+        margin: 2% 0% 1% 0%;
+        font-size: 11px;
+        font-weight: bold;
+        border-radius: 20px;
+        border: transparent;
+        background-color: #a58b93;
+        color: #151d45;
+        letter-spacing: 1px;
+    }
+    .placeholder{
+        background-color: transparent;
+        border: 1px solid #eec1b0;
+        padding: 6px 3px 6px 10px;
+        margin-right: 4%;
+        width: 46%;
+    }
+ 
 }

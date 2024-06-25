@@ -19,6 +19,27 @@
                         </div>
                         <div class="monogram">MONOGRAM</div>
                     </div>
+                    <div class="hamburger">
+                       <div class="hamburgerIcon">
+                        <i class="fa-solid fa-bars"></i>
+                       </div>
+                        <div class="bagIcon">
+                            <i class="fa-solid fa-bag-shopping"></i>
+                        </div>
+                        <div class="usd">USD <i class="fa-solid fa-caret-down downIcon"></i>
+                            <div class="gbpDropDown" style="display: none;">
+                                <ul>
+                                    <li><a href="">USD</a></li>
+                                    <li><a href="">CAD</a></li>
+                                    <li><a href="">EUR</a></li>
+                                    <li><a href="">AUD</a></li>
+                                    <li><a href="">GBP</a></li>
+                                    <li><a href="">KRW</a></li>
+                                    <li><a href="">JPY</a></li>
+                                </ul>
+                            </div>  
+                        </div>
+                    </div>
                     <div class="links">
                         <ul class="navLinks">
                             <li><a href="">HOW IT WORKS</a></li>
@@ -145,6 +166,10 @@
             </div>
 
             <div class="banner">
+                <div class="bannerText">
+                    <h1>CREATE YOUR OWN CONSOLE</h1>
+                    <p>Add-on to make it perfect</p>
+                </div>
                 <img src="./images/banner.jpg" alt="banner" >
             </div>
             <!-- <div class="dp1text">
@@ -225,7 +250,7 @@
                         <div class="miniTextdiv">
                             <h4>DIAL MODULE</h4>
                             <div class="price-section">
-                                <p class="price-tag">$19-$129</p>
+                                <p class="price-tag dialModule">$19-$129</p>
                                 <button class="shopbutton" id="sdp6Shopbutton">SHOP NOW</button>
                             </div>
                         </div>
@@ -235,7 +260,7 @@
 
                 <div class="images  sdp7 picture" id="sdp7">
                     <div class="sdp7text">
-                        <div class="miniTextdiv">
+                        <div class="miniTextdiv" id="miniTextdiv1">
                             <h4>CONSOLE PACK: AUDIO</h4>
                             <div class="price-section">
                                 <p class="price-tag">$129</p>
@@ -247,7 +272,7 @@
 
                 <div class="images   sdp8 picture" id="sdp8">
                     <div class="sdp8text">
-                        <div class="miniTextdiv">
+                        <div class="miniTextdiv" id="miniTextdiv2">
                             <h4>CONSOLE PACK: PHOTO</h4>
                             <div class="price-section">
                                 <p class="price-tag">$129</p>
@@ -260,7 +285,7 @@
 
                 <div class="images  sdp9 picture" id="sdp9">
                     <div class="sdp9text">
-                        <div class="miniTextdiv">
+                        <div class="miniTextdiv" id="miniTextdiv3">
                             <h4>CONSOLE PACK: VIDEO</h4>
                             <div class="price-section">
                                 <p class="price-tag">$129</p>
@@ -273,7 +298,7 @@
 
                 <div class="images   sdp10 picture" id="sdp10">
                     <div class="spd10text">
-                        <div class="miniTextdiv">
+                        <div class="miniTextdiv" id="miniTextdiv4">
                             <h4>MONOGRAM CARE</h4>
                             <div class="price-section">
                                 <p class="price-tag">$129</p>
@@ -285,48 +310,67 @@
             </div>
         </main>
         <footer>
-            <div>
-                <h4>MONOGRAM</h4>
-                <p>305 King St. W. <br>
-                    Suite 502 <br>
-                    Kitchener, ON <br>
-                    Canada</p>
-            </div>
-            <div>
-                <h4>QUICK LINKS</h4>
-                <a href="./404.html"><li>Home</li></a>
-                <a href="./404.html"><li>How it Works</li></a>
-                <a href="./404.html"><li>Shop</li></a>
-                <a href="./404.html"><li>Download</li></a>
-            </div>
-            <div>
-                <h4>HELP</h4>
-                <a href="./404.html"><li>FAQs</li></a>
-                <a href="./404.html"><li>Support Center</li></a>
-                <a href="./404.html"><li>Shipping and Sales</li></a>
-    
-            </div>
-            <div>
-                <h4>INFORMATION</h4>
-                <a href="./404.html"><li>About Us</li></a>
-                <a href="./404.html"><li>Work with us</li></a>
-                <a href="./404.html"><li>Privacy Policy</li></a>
-                <a href="./404.html"><li>Terms of Use</li></a>
-                <a href="./404.html"><li>Terms of Sale</li></a>
-                <a href="./404.html"><li>Press Kit</li></a>
-            </div>
-            <div>
-                <h4>SUBSCRIBE TO MONOGRAM</h4>
-                <p>Master productivity with Creative <br>Console and get all <br> the latest Monogram news.</p>
-                <input type="text" placeholder="Email" class="placeholder">
-                <button class="Submit">Submit</button>
-                <div class="icon">
-                    <a href="./404.html"><li><i class="bi bi-instagram"></i></li></a>
-                    <a href="./404.html"><li><i class="bi bi-twitter"></i></li></a>
-                    <a href="./404.html"><li><i class="bi bi-facebook"></i></li></a>
-                    <a href="./404.html"><li><i class="bi bi-youtube"></i></li></a>
+            <div class="footerDivs">
+                <div class="section1">
+                    <div>
+                        <h4>MONOGRAM</h4>
+                        <p>305 King St. W. <br>
+                            Suite 502 <br>
+                            Kitchener, ON <br>
+                            Canada</p>
+                    </div>
+                    <div class="subscribe subscribeTab">
+                        <h4>SUBSCRIBE TO MONOGRAM</h4>
+                        <p>Master productivity with Creative <br>Console and get all <br> the latest Monogram news.</p>
+                        <input type="text" placeholder="Email Address" class="placeholder">
+                        <button class="submit">SUBMIT</button>
+                        <div class="icon">
+                            <a href="./404.html"><li><i class="fa-brands fa-instagram"></i></i></li></a>
+                            <a href="./404.html"><li><i class="fa-brands fa-twitter"></i></li></a>
+                            <a href="./404.html"><li><i class="fa-brands fa-facebook"></i></li></a>
+                            <a href="./404.html"><li><i class="fa-brands fa-youtube"></i></li></a>
+                        </div>
+                        <p>© Monogram 2023</p>
+                    </div>
                 </div>
-                <p>© Monogram 2023</p>
+                <div class="section2">
+                    <div>
+                        <h4>QUICK LINKS</h4>
+                        <a href="./404.html"><li>Home</li></a>
+                        <a href="./404.html"><li>How it Works</li></a>
+                        <a href="./404.html"><li>Shop</li></a>
+                        <a href="./404.html"><li>Download</li></a>
+                    </div>
+                    <div>
+                        <h4>HELP</h4>
+                        <a href="./404.html"><li>FAQs</li></a>
+                        <a href="./404.html"><li>Support Center</li></a>
+                        <a href="./404.html"><li>Shipping and Sales</li></a>
+            
+                    </div>
+                    <div>
+                        <h4>INFORMATION</h4>
+                        <a href="./404.html"><li>About Us</li></a>
+                        <a href="./404.html"><li>Work with us</li></a>
+                        <a href="./404.html"><li>Privacy Policy</li></a>
+                        <a href="./404.html"><li>Terms of Use</li></a>
+                        <a href="./404.html"><li>Terms of Sale</li></a>
+                        <a href="./404.html"><li>Press Kit</li></a>
+                    </div>
+                    <div class="subscribe subscribeDesktop">
+                        <h4>SUBSCRIBE TO MONOGRAM</h4>
+                        <p>Master productivity with Creative <br>Console and get all <br> the latest Monogram news.</p>
+                        <input type="text" placeholder="Email Address" class="placeholder">
+                        <button class="submit">SUBMIT</button>
+                        <div class="icon">
+                            <a href="./404.html"><li><i class="fa-brands fa-instagram"></i></i></li></a>
+                            <a href="./404.html"><li><i class="fa-brands fa-twitter"></i></li></a>
+                            <a href="./404.html"><li><i class="fa-brands fa-facebook"></i></li></a>
+                            <a href="./404.html"><li><i class="fa-brands fa-youtube"></i></li></a>
+                        </div>
+                        <p>© Monogram 2023</p>
+                    </div>
+                </div>
             </div>
         </footer>
     </div>
