@@ -18,3 +18,28 @@ document.querySelectorAll('.picture').forEach(div => {
   // eslint-disable-next-line no-return-assign
   div.addEventListener('mouseleave', () => price.style.display = 'block')
 })
+
+// eslint-disable-next-line no-unused-vars
+function downButton () {
+  const workflowDropDown = document.getElementById('workflowDropDown')
+
+  if (workflowDropDown.style.display === 'none') {
+    // eslint-disable-next-line no-const-assign
+    workflowDropDown = 'block'
+  } else {
+    // eslint-disable-next-line no-const-assign
+    workflowDropDown = 'none'
+  }
+}
+// eslint-disable-next-line no-unused-vars
+function downButtonMobile () {
+  const gbpDropDown = document.getElementById('gbpDropDown')
+
+  if (gbpDropDown.style.display === 'none') {
+    // eslint-disable-next-line no-const-assign
+    gbpDropDown.style.display = 'block'
+  } else {
+    // eslint-disable-next-line no-const-assign
+    gbpDropDown.style.display = 'none'
+  }
+}

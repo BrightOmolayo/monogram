@@ -26,18 +26,17 @@
                         <div class="bagIcon">
                             <i class="fa-solid fa-bag-shopping"></i>
                         </div>
-                        <div class="usd">USD <i class="fa-solid fa-caret-down downIcon"></i>
-                            <div class="gbpDropDown" style="display: none;">
-                                <ul>
-                                    <li><a href="">USD</a></li>
-                                    <li><a href="">CAD</a></li>
-                                    <li><a href="">EUR</a></li>
-                                    <li><a href="">AUD</a></li>
-                                    <li><a href="">GBP</a></li>
-                                    <li><a href="">KRW</a></li>
-                                    <li><a href="">JPY</a></li>
-                                </ul>
-                            </div>  
+                        <div class="usd"> <span class="hamburgerSpan">USD</span>
+                            <select name="" id="" class="gbpDropDown hamburgerSpan1" id="gbpDropDown">
+                                <option value="" selected>USD</option>
+                                <option value="">CAD</option>
+                                <option value="">EUR</option>
+                                <option value="">AUD</option>
+                                <option value="">GBP</option>
+                                <option value="">KRW</option>
+                                <option value="">JPY</option>
+                            </select>
+                            <!-- <span class="hamburgerSpan1">$</span><i class=" mobileDwon fa-solid fa-caret-down downIcon" onclick="downButtonMobile()"></i>   -->
                         </div>
                     </div>
                     <div class="links">
@@ -45,8 +44,8 @@
                             <li><a href="">HOW IT WORKS</a></li>
                             <li>
                                 <a href="">
-                                    <div>WORKFLOWS <i class="fa-solid fa-caret-down downIcon"></i>
-                                        <div class="workflowDropDown" style="display: none;">
+                                    <div>WORKFLOWS <i class="fa-solid fa-caret-down downIcon" id="downIcon" onclick="downButton"></i>
+                                        <div class="workflowDropDown" id="workflowDropDown" style="display: none;">
                                             <ul>
                                                 <li><a href="">AUDIO CONSOLE</a></li>
                                                 <li><a href="">PHOTO CONSOLE</a></li>
@@ -166,11 +165,17 @@
             </div>
 
             <div class="banner">
-                <div class="bannerText">
+                <div class="bannerSpacer">
+                    <div class="bannerText formobile">
+                        <h1>CREATE <br> YOUR <br> OWN CONSOLE</h1>
+                        <p>Add-on to make it perfect</p>
+                    </div>
+                </div>
+                <div class="bannerText forDestop">
                     <h1>CREATE YOUR OWN CONSOLE</h1>
                     <p>Add-on to make it perfect</p>
                 </div>
-                <img src="./images/banner.jpg" alt="banner" >
+                <!-- <img src="./images/banner.jpg" alt="banner" > -->
             </div>
             <!-- <div class="dp1text">
                 <h4>hedjlnsk;aL</h4>
@@ -312,7 +317,7 @@
         <footer>
             <div class="footerDivs">
                 <div class="section1">
-                    <div>
+                    <div class="footerMonogram footerMonogramforDesktop">
                         <h4>MONOGRAM</h4>
                         <p>305 King St. W. <br>
                             Suite 502 <br>
@@ -330,25 +335,41 @@
                             <a href="./404.html"><li><i class="fa-brands fa-facebook"></i></li></a>
                             <a href="./404.html"><li><i class="fa-brands fa-youtube"></i></li></a>
                         </div>
-                        <p>© Monogram 2023</p>
+                        <p class="cmonogramDesktop">© Monogram 2024</p>
+                    </div>
+                    <div class="footerMonogramforMobile">
+                        <div class="footerMonogram ">
+                            <h4>MONOGRAM</h4>
+                            <p>305 King St. W. <br>
+                                Suite 502 <br>
+                                Kitchener, ON <br>
+                                Canada</p>
+                        </div>
+                        <div class="quickLinksForMobile">
+                            <h4>QUICK LINKS</h4>
+                            <a href="./404.html"><li>Home</li></a>
+                            <a href="./404.html"><li>How it Works</li></a>
+                            <a href="./404.html"><li>Shop</li></a>
+                            <a href="./404.html"><li>Download</li></a>
+                        </div>
                     </div>
                 </div>
                 <div class="section2">
-                    <div>
+                    <div class="quickLinksForTab">
                         <h4>QUICK LINKS</h4>
                         <a href="./404.html"><li>Home</li></a>
                         <a href="./404.html"><li>How it Works</li></a>
                         <a href="./404.html"><li>Shop</li></a>
                         <a href="./404.html"><li>Download</li></a>
                     </div>
-                    <div>
+                    <div class="help">
                         <h4>HELP</h4>
                         <a href="./404.html"><li>FAQs</li></a>
                         <a href="./404.html"><li>Support Center</li></a>
                         <a href="./404.html"><li>Shipping and Sales</li></a>
             
                     </div>
-                    <div>
+                    <div class="information">
                         <h4>INFORMATION</h4>
                         <a href="./404.html"><li>About Us</li></a>
                         <a href="./404.html"><li>Work with us</li></a>
@@ -368,9 +389,10 @@
                             <a href="./404.html"><li><i class="fa-brands fa-facebook"></i></li></a>
                             <a href="./404.html"><li><i class="fa-brands fa-youtube"></i></li></a>
                         </div>
-                        <p>© Monogram 2023</p>
+                        <p>© Monogram 2024</p>
                     </div>
                 </div>
+                <p class="cmonogramMobile">© Monogram 2023</p>
             </div>
         </footer>
     </div>
