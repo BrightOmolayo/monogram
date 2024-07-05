@@ -517,7 +517,8 @@ footer h4{
 /*banner*/
 
 .banner{
-    margin-bottom: 5%;
+    margin-bottom: 50px;
+    position: relative;
 }
 .bannerText{
     text-align: center;
@@ -532,6 +533,7 @@ footer h4{
     word-spacing: 4px;
     letter-spacing: 3px;
     font-weight: 700;
+    z-index: 9;
 }
 .submit{
     padding: 7px 32px;
@@ -580,6 +582,10 @@ footer h4{
 }
 .cmonogramMobile{
     display: none;
+}
+.imgForDestop{
+    display: block;
+    margin-bottom: 50px;
 }
 /*mobile device*/
 
@@ -997,6 +1003,25 @@ footer h4{
         position: relative;
         top: 50px;
     }
+    select{
+        
+    }
+    .imgForDestop{
+        display: none;
+    }
+    #gbpDropDown{
+        background-color: #151d45;
+    }
+    .default{
+        background-color: #151d45;
+        background: transparent;
+    }
+    select{
+        appearance: none;
+    } 
+    .default .down{
+        display: block;
+    }
     /* .gbpDropDown{
         background-color: #f5f5f5;
         width: 38%;
@@ -1007,9 +1032,7 @@ footer h4{
         left: 27px;
         text-align: center;
     }
-    select{
-        appearance: none;
-    } */
+*/
 }
 
 @media  screen and  (min-width:1024px) and (max-width:1200px){
