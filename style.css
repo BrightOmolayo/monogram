@@ -1003,18 +1003,19 @@ footer h4{
         position: relative;
         top: 50px;
     }
-    select{
-        
+    select {
+        background-color: transparent;
+        color: inherit;
+        border: transparent;
+        padding:5px;
     }
     .imgForDestop{
         display: none;
     }
-    #gbpDropDown{
-        background-color: #151d45;
-    }
     .default{
         background-color: #151d45;
         background: transparent;
+        display: none;
     }
     select{
         appearance: none;
